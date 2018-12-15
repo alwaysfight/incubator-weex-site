@@ -31,6 +31,8 @@ See the [example](http://dotwe.org/vue/00f4b68b3a86360df1f38728fd0b4a1f).
 | `placeholder` | String | {URL / Base64}             | -             |
 | `resize`      | String | cover / contain / stretch  | stretch       |
 | `src`         | String | {URL / Base64 }            | -             |
+| `auto-recycle`| Boolean| true / false               | true          |
+| `filter`      | Integer| -                          |               |
 
   > **Note:** you can specify a relative URL  for `src` and `placeholder`, relative URL will be rewritten to the to the actual resource URL (local or remote). See also: [Path](../../guide/advanced/path.html).
 
@@ -51,7 +53,11 @@ A URL value for placeholder image. It will be displayed when the image view is e
 
 See also: [`background-size`](https://developer.mozilla.org/en-US/docs/Web/CSS/background-size).
 
-### `src`
+  ### `auto-recycle` <span class="api-version">v0.20+@Android</span>
+  
+The memory mode of image loaded,if true the imaged auto release after used.
+  
+  ### `src`
 
 The URL of the image to display. This attribute is mandatory for the `<image>` component.
 
